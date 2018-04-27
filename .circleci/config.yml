@@ -1,7 +1,9 @@
+version: 2
+  
 deployment:
   production:
     branch: master
     commands:
+      - mvn test:compile
+      - mvn integration-test
       - scp -P 2222 ~/JenkinsWar/target/JenkinsWar.war stageweb01@52.170.251.142:/home/stageweb01/
-      
-      
