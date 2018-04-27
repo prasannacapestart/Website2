@@ -28,3 +28,9 @@ jobs: # a collection of steps
       
       - store_artifacts: # store the uberjar as an artifact
           path: target/JenkinsWar.war
+          
+deployment:
+  production:
+    branch: master
+    commands:
+      - scp -P 2222 ~/JenkinsWar/target/JenkinsWar.war stageweb01@52.170.251.142:/home/stageweb01/
