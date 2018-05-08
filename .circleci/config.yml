@@ -28,5 +28,12 @@ jobs: # a collection of steps
       
       - store_artifacts: # store the uberjar as an artifact
           path: target/JenkinsWar.war
-      
+ 
+
+  deploy-job:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            SHA256:5I6ZeEa/LAIoZOS9sJ2U7Kp6iZXzhydmuNKhFb1yVXM
+            SHA256:AVSVZp4lSc/ytJIKIpsf/dovtHsZQyIa5RyPY5XPq0s
       - run: scp /home/circleci/JenkinsWar/target/JenkinsWar.war stageweb01@168.62.59.58:/home/stageweb01/
