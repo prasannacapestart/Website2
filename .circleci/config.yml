@@ -31,5 +31,5 @@ jobs: # a collection of steps
  
       - add_ssh_keys:
           fingerprints:
-          - "SHA256:DmsIZ+atkQNuEu+jXGbZuLKK+4AQkY29lJjpMDAmBOc stageweb01@TCW-Stage-Web01"
+          - "SHA256:DmsIZ+atkQNuEu+jXGbZuLKK+4AQkY29lJjpMDAmBOc"
       - run: scp /home/circleci/JenkinsWar/target/JenkinsWar.war stageweb01@168.62.59.58:/home/stageweb01/
