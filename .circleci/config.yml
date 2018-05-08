@@ -33,4 +33,4 @@ jobs: # a collection of steps
           fingerprints:
           - "42:09:4c:fc:eb:99:9b:a9:ac:a6:62:8f:5d:01:99:30"
           
-      - run: scp /home/circleci/JenkinsWar/target/JenkinsWar.war stageweb01@168.62.59.58:/home/stageweb01/
+      - run: scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /home/circleci/JenkinsWar/target/JenkinsWar.war stageweb01@168.62.59.58:/home/stageweb01/
