@@ -29,7 +29,6 @@ jobs: # a collection of steps
       - store_artifacts: # store the uberjar as an artifact
           path: target/JenkinsWar.war
  
-
       - add_ssh_keys:
           fingerprints:
             "SHA256:5I6ZeEa/LAIoZOS9sJ2U7Kp6iZXzhydmuNKhFb1yVXM"
