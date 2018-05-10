@@ -31,6 +31,6 @@ jobs: # a collection of steps
  
       - add_ssh_keys:
           fingerprints:
-          - "c1:01:5c:27:b8:e7:8d:c4:00:01:68:08:09:ba:2f:e0"
+          - "	2e:aa:e2:7d:41:35:f2:34:66:58:d8:56:7b:91:c1:b2"
           
       - run: scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /home/circleci/JenkinsWar/target/JenkinsWar.war stageweb01@168.62.59.58:/home/stageweb01/
