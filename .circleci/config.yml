@@ -3,6 +3,9 @@ general:
   branches:
     only:
       - Test 
+    ignore:
+      - Master
+      
 jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
     
